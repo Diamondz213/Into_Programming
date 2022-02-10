@@ -21,6 +21,6 @@ public class RigibodyMovement : MonoBehaviour
     void FixedUpdate()
     {
         rigibody.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rigibody.velocity.y, Input.GetAxis("Vertical")) * moveSpeed;
-        
+        Debug.Log("Currently Detecting" + rigibody);
     }
 }
