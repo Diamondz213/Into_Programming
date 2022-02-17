@@ -5,6 +5,8 @@ using UnityEngine;
 public class NewBehaviorScript : MonoBehaviour
 { 
     public int moveSpeed;//controls how fast the player moves
+    public int jumpSpeed; // controls how fast the player is in the air
+    private float ySpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -32,5 +34,11 @@ public class NewBehaviorScript : MonoBehaviour
             transform.position += Time.deltaTime * moveSpeed * Vector3.back;
         }
 
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+      
+        if (Input.GetKey(KeyCode.Space))
+        {
+            ySpeed = jumpSpeed;
+        }
     }
 }
