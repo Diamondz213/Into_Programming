@@ -15,7 +15,7 @@ public class CollisionDetector : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player");
+        if (collision.gameObject.tag == "Player")
         {
             hitCounter += 1;
             print("I've been hit " + hitCounter + " times.");
