@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 810645204}
   m_Layer: 0
   m_Name: Object
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,6 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitCounter: 0
+  numberText: {fileID: 0}
 --- !u!54 &810645204
 Rigidbody:
   m_ObjectHideFlags: 0

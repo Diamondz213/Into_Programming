@@ -19,7 +19,7 @@ public class CollisionDetector : MonoBehaviour
         {
             hitCounter += 1;
             print("I've been hit " + hitCounter + " times.");
-            numberText.text = hitCounter.ToString();
+            
         }
         
     }
